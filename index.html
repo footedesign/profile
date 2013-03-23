@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Ryan Foote Profile</title>
-  <meta name="description" content="Profile of Ryan Foote for Startup Institute">
+  <meta name="description" content="Profile of Ryan Foote for Startup Institute Boston">
   <meta name="viewport" content="width=device-width">
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/styles.css">
@@ -13,23 +13,36 @@
   <div class="profile-pane">
     <h1>Ryan Foote</h1>
     <div class="column alpha">
-      <img class="avatar" src="http://gravatar.com/avatar/b90f97fe1028b708fd8c3e3cad1720e0?s=150" height="150" width="150">
+      <a class="enlarge" href="#" id="me">
+        <img class="avatar" src="http://gravatar.com/avatar/b90f97fe1028b708fd8c3e3cad1720e0?s=150" height="150" width="150">
+      </a>
       <p class="location supplement">Based in<br>
         <strong>Boston, MA</strong></p>
     </div>
     <div class="column beta">
-      <img class="avatar" src="i/startup.png" height="150" width="150">
+      <a class="enlarge" href="#" id="start">
+        <img class="avatar" src="i/startup.png" height="150" width="150">
+      </a>
       <p class="work supplement">
         Product Design Fellow at<br>
         <a href="http://startupinstitute.com"><strong>Startup Institute</strong></a>
       </p>
     </div>
+    <div id="map-me" class="map hidden">
+      <img src="http://maps.googleapis.com/maps/api/staticmap?center=East+Boston,MA&zoom=13&size=384x300&maptype=roadmap&markers=East+Boston,MA&sensor=false">
+    </div>
+    <div id="map-startup" class="map hidden">
+      <img src="http://maps.googleapis.com/maps/api/staticmap?center=290+Congress+Street,Boston,MA&zoom=13&size=384x300&maptype=roadmap&markers=290+Congress+Street,Boston,MA&sensor=false">
+    </div>
     <ul class="reach-out">
-      <li><a href="http://footedesign.com">footedesign.com</a></li>
-      <li><a href="https://www.linkedin.com/in/ryanfoote">View Resume</a></li>
-      <li><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;f&#111;&#111;&#116;&#101;&#100;e&#115;&#105;&#103;n@&#103;&#109;&#97;&#105;l&#46;&#99;&#111;&#109;">Send a Message</a></li>
-      <li><a class="last" href="http://twitter.com/footedesign">@footedesign</a></li>
+      <li><a class="icon-earth" href="http://footedesign.com">footedesign.com</a></li>
+      <li><a class="icon-briefcase" href="https://www.linkedin.com/in/ryanfoote">View Resume</a></li>
+      <li><a class="icon-envelop" href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;f&#111;&#111;&#116;&#101;&#100;e&#115;&#105;&#103;n@&#103;&#109;&#97;&#105;l&#46;&#99;&#111;&#109;">Send a Message</a></li>
+      <li><a class="icon-twitter" href="http://twitter.com/footedesign">@footedesign</a></li>
+      <li><a class="icon-github last" href="https://github.com/footedesign">github</a></li>
     </ul>
   </div>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
